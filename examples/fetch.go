@@ -10,7 +10,8 @@ import (
 
 const httpPrefix = "http://"
 
-func Fetch(args []string) {
+func Fetch() {
+	args := os.Args
 	for _, url := range args[1:] {
 
 		if len(args) < 1 {

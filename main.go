@@ -9,11 +9,12 @@ import (
 	"github.com/sakchhu/go-snippets/examples"
 )
 
-var funcMap = map[string]func([]string){
-	"echo":      examples.Echo,
-	"dupes":     examples.Dupes,
-	"fetch":     examples.Fetch,
-	"fetch-all": examples.FetchAll,
+var funcMap = map[string]func(){
+	"echo":        examples.Echo,
+	"dupes":       examples.Dupes,
+	"fetch":       examples.Fetch,
+	"fetch-all":   examples.FetchAll,
+	"echo-server": examples.EchoServer,
 }
 
 func main() {
@@ -35,5 +36,6 @@ func main() {
 		printUsageAndExit()
 	}
 
-	chosen(args)
+	os.Args = args
+	chosen()
 }

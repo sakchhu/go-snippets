@@ -2,9 +2,10 @@ package examples
 
 import (
 	"fmt"
+	"os"
 	"strings"
 )
 
-func Echo(args []string) {
-	fmt.Println(strings.Join(args[1:], " "))
+func Echo() {
+	fmt.Println(strings.Join(os.Args[1:], " "))
 }

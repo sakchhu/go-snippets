@@ -17,10 +17,12 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 	"time"
 )
 
-func FetchAll(args []string) {
+func FetchAll() {
+	args := os.Args
 	start := time.Now()
 	ch := make(chan string) // channel is where every goroutine can communicate with each other?
 

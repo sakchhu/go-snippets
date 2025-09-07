@@ -8,9 +8,9 @@ import (
 	"os"
 )
 
-func Dupes(args []string) {
+func Dupes() {
 	counts := make(map[string]int)
-	files := args[1:]
+	files := os.Args[1:]
 	if len(files) < 1 {
 		input := bufio.NewScanner(os.Stdin)
 
