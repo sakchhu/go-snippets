@@ -15,6 +15,7 @@ var funcMap = map[string]func(){
 	"fetch":       examples.Fetch,
 	"fetch-all":   examples.FetchAll,
 	"echo-server": examples.EchoServer,
+	"lissajous":   examples.ExampleLissajous,
 }
 
 func main() {
