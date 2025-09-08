@@ -18,6 +18,8 @@ var funcMap = map[string]func(){
 	"lissajous":     examples.ExampleLissajous,
 	"example-json":  examples.JsonSimple,
 	"example-anime": examples.JsonAnimeInfo,
+	"defer-verify":  examples.DeferVerify,
+	"defer-fetch":   examples.DeferFetch,
 }
 
 func main() {
