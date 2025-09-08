@@ -10,12 +10,13 @@ import (
 )
 
 var funcMap = map[string]func(){
-	"echo":        examples.Echo,
-	"dupes":       examples.Dupes,
-	"fetch":       examples.Fetch,
-	"fetch-all":   examples.FetchAll,
-	"echo-server": examples.EchoServer,
-	"lissajous":   examples.ExampleLissajous,
+	"echo":         examples.Echo,
+	"dupes":        examples.Dupes,
+	"fetch":        examples.Fetch,
+	"fetch-all":    examples.FetchAll,
+	"echo-server":  examples.EchoServer,
+	"lissajous":    examples.ExampleLissajous,
+	"example-json": examples.JsonSimple,
 }
 
 func main() {
