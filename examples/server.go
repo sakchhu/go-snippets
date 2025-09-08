@@ -12,7 +12,7 @@ import (
 var mu sync.Mutex
 var count int
 
-func EchoServer() {
+func Server() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		mu.Lock()
 		count++
